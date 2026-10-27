@@ -1,1 +1,1 @@
-Give the code a 
+Takes raw Sentinel-2 bands B03(green), B04(red) and B08(NIR) as GeoTIFFs and computes NDVI and a yellowing index for each 8×8-pixel tile. Each tile is classified as healthy, water_stressed or other_stress using fixed thresholds. Only the flagged (non-healthy) tiles are written to output.json, with latitude, longitude, status and given a health score out of 100.s

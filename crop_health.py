@@ -58,7 +58,7 @@ for row in range(0, height - TILE + 1, TILE):
         lon, lat = transform * (col + TILE/2, row + TILE/2)
         score = min(max(ndvi_mean / 0.7, 0), 1)
         report.append({"tile": [row, col], "lat": float(lat), "lon": float(lon),
-                       "status": status, "health_score": float(score),
+                       "status": status, "health_score": float(score*100),
                        "ndvi_mean": float(ndvi_mean)})
 
 print("tiles assessed:", sum(counts.values()), counts)
