@@ -1,0 +1,5 @@
+*.tif
+*.tiff
+*.jp2
+__pycache__/
+.vscode/
